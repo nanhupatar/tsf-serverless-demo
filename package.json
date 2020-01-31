@@ -1,0 +1,38 @@
+{
+  "name": "api-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon test/index.js",
+    "compile": "babel src/ --out-dir app/",
+    "dev": "nodemon src/index.js",
+    "build": "npm run clean && npm run compile",
+    "clean": "rm -rf app/"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.0"
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "config": "^3.2.4",
+    "crypto": "^1.0.1",
+    "jsonwebtoken": "^8.5.1",
+    "koa": "^2.11.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-convert": "^1.2.0",
+    "koa-cors": "^0.0.16",
+    "koa-json": "^2.0.2",
+    "koa-jwt": "^3.6.0",
+    "koa-logger": "^3.2.1",
+    "koa-router": "^7.4.0",
+    "koa-validate": "^1.0.7",
+    "lodash": "^4.17.15",
+    "moment": "^2.24.0",
+    "mysql2": "^2.0.1",
+    "querystring": "^0.2.0",
+    "sequelize": "^5.21.2"
+  }
+}
